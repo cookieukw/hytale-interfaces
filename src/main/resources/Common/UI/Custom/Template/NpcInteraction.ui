@@ -1,0 +1,74 @@
+Group {
+  LayoutMode: MiddleCenter;
+  Background: #00000099;
+  Group #MainPanel {
+    Anchor: (Width: 560, Height: 720);
+    LayoutMode: Full;
+    Background: #222222FF;
+    Label #NpcName {
+      Text: "Cookie";
+      Anchor: (Width: 240, Height: 50, Top: 42);
+      Style: (FontSize: 34, TextColor: #FFFFFFFF, RenderUppercase: true, HorizontalAlignment: Center, VerticalAlignment: Center);
+    }
+    Label #NpcMood {
+      Text: "Mood: Happy";
+      Anchor: (Width: 220, Height: 28, Top: 92);
+      Style: (FontSize: 18, TextColor: #AAAAAAFF, RenderBold: true, RenderUppercase: true, HorizontalAlignment: Center, VerticalAlignment: Center);
+    }
+    Group #NpcPortrait {
+      Anchor: (Width: 180, Height: 180, Top: 140);
+      Background: #6f0101;
+    }
+    Label #NpcDialogue {
+      Text: "Hey, Cookie.";
+      Anchor: (Width: 420, Height: 70, Top: 340);
+      Background: #1f1fd6;
+      Style: (FontSize: 22, TextColor: #FFFFFFFF, HorizontalAlignment: Center, VerticalAlignment: Center);
+    }
+    Button #ChatButton {
+      Anchor: (Width: 360, Height: 54, Top: 440);
+      Background: #444444FF;
+      Label {
+        Text: "Chat";
+        Anchor: (Top: 0, Bottom: 0, Left: 0, Right: 0);
+        Style: (FontSize: 22, TextColor: #FFFFFFFF, HorizontalAlignment: Center, VerticalAlignment: Center);
+      }
+    }
+    Button #JokeButton {
+      Anchor: (Width: 360, Height: 54, Top: 504);
+      Background: #444444FF;
+      Label {
+        Text: "Tell a Joke";
+        Anchor: (Top: 0, Bottom: 0, Left: 0, Right: 0);
+        Style: (FontSize: 22, TextColor: #FFFFFFFF, HorizontalAlignment: Center, VerticalAlignment: Center);
+      }
+    }
+    Button #FlirtButton {
+      Anchor: (Width: 360, Height: 54, Top: 568);
+      Background: #444444FF;
+      Label {
+        Text: "Flirt";
+        Anchor: (Top: 0, Bottom: 0, Left: 0, Right: 0);
+        Style: (FontSize: 22, TextColor: #FFFFFFFF, HorizontalAlignment: Center, VerticalAlignment: Center);
+      }
+    }
+    Button #InsultButton {
+      Anchor: (Width: 170, Height: 50, Top: 632, Left: 100);
+      Background: #662222FF;
+      Label {
+        Text: "Insult";
+        Anchor: (Top: 0, Bottom: 0, Left: 0, Right: 0);
+        Style: (FontSize: 18, TextColor: #FFFFFFFF, HorizontalAlignment: Center, VerticalAlignment: Center);
+      }
+    }
+    Button #GiftButton {
+      Anchor: (Width: 170, Height: 50, Top: 632, Right: 100);
+      Background: #226622FF;
+      Label {
+        Text: "Give Gift";
+        Anchor: (Top: 0, Bottom: 0, Left: 0, Right: 0);
+        Style: (FontSize: 18, TextColor: #FFFFFFFF, HorizontalAlignment: Center, VerticalAlignment: Center);
+      }
+    }
+  }
+}

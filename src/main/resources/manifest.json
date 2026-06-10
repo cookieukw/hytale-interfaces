@@ -1,0 +1,19 @@
+{
+  "Id": "test_interfaces",
+  "Group": "example",
+  "Name": "test_interfaces",
+  "Version": "1.0.0",
+  "Description": "test_interfaces",
+  "Authors": [
+    {
+      "Name": "cookieukw"
+    }
+  ],
+  "Website": "example.org",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "org.example.plugin.ExamplePlugin",
+  "IncludesAssetPack": true
+}

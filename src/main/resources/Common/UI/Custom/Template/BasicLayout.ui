@@ -1,0 +1,10 @@
+Group {
+  LayoutMode: Center;
+  Background: #ffffff;
+  Group #Group11 {
+    Anchor: (Full: 1);
+    LayoutMode: Top;
+    FlexWeight: 1;
+    Background: #ff4747;
+  }
+}

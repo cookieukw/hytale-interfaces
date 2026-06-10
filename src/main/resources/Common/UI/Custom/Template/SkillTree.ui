@@ -1,0 +1,542 @@
+Group #Overlay {
+  LayoutMode: CenterMiddle;
+  Background: #0A0A0A99;
+  Group #MainContainer {
+    Anchor: (Width: 1300, Height: 800);
+    LayoutMode: Left;
+    Group #LeftColumn {
+      Anchor: (Right: 30);
+      LayoutMode: Top;
+      FlexWeight: 1;
+      Group #SkillPanelBorder {
+        Anchor: (Height: 380, Bottom: 20);
+        Padding: (Full: 6);
+        LayoutMode: Top;
+        Background: #513e22;
+        Group #SkillPanelInner {
+          Padding: (Full: 15);
+          LayoutMode: Top;
+          FlexWeight: 1;
+          Background: #101c2a;
+          Group #SkillHeader {
+            Anchor: (Height: 30, Top: -25);
+            LayoutMode: CenterMiddle;
+            Background: #c19a5b;
+            Group {
+              Anchor: (Full: 1);
+              LayoutMode: CenterMiddle;
+              Background: #101c2a;
+              Label {
+                Text: "SKILL";
+                Background: #c19a5b;
+                Style: (FontSize: 16, TextColor: #000000, RenderBold: true);
+              }
+            }
+          }
+          Group #IconNameRow {
+            Anchor: (Height: 80, Bottom: 20);
+            LayoutMode: Left;
+            Group #SkillIconBorder {
+              Anchor: (Width: 80, Right: 15);
+              Padding: (Full: 3);
+              LayoutMode: CenterMiddle;
+              Background: #658db4;
+              Group {
+                Anchor: (Full: 1);
+                LayoutMode: CenterMiddle;
+                Background: #080c12;
+                Label {
+                  Text: "✨";
+                  Style: (FontSize: 32);
+                }
+              }
+            }
+            Group #SkillName {
+              LayoutMode: CenterMiddle;
+              FlexWeight: 1;
+              Label {
+                Text: "THAT WAS FOR ME?";
+                Style: (FontSize: 18, TextColor: #FFFFFF, RenderBold: true, HorizontalAlignment: Center);
+              }
+            }
+          }
+          Group #SkillDesc {
+            LayoutMode: Top;
+            FlexWeight: 1;
+            Label {
+              Text: "Get a small bonus when finding clickables. The bonus received varies depending on your current level.";
+              Style: (FontSize: 14, TextColor: #a8bacc);
+            }
+          }
+          Group #SkillFooter {
+            Anchor: (Height: 30);
+            LayoutMode: Left;
+            Label {
+              Text: "Max Points: 5";
+              FlexWeight: 1;
+              Style: (FontSize: 14, TextColor: #FFFFFF, VerticalAlignment: Center);
+            }
+            Button #InfoBtn {
+              Anchor: (Width: 70);
+              Background: #c19a5b;
+              Group {
+                Anchor: (Full: 1);
+                LayoutMode: CenterMiddle;
+                Background: #101c2a;
+                Label {
+                  Text: "INFO";
+                  Style: (FontSize: 14, TextColor: #c19a5b, RenderBold: true);
+                }
+              }
+            }
+          }
+        }
+      }
+      Group #EquippedPanelBorder {
+        Padding: (Full: 6);
+        LayoutMode: Top;
+        FlexWeight: 1;
+        Background: #513e22;
+        Group #EquippedPanelInner {
+          Padding: (Full: 15);
+          LayoutMode: Top;
+          FlexWeight: 1;
+          Background: #101c2a;
+          Group #EquippedHeader {
+            Anchor: (Height: 30, Top: -25);
+            LayoutMode: CenterMiddle;
+            Background: #c19a5b;
+            Group {
+              Anchor: (Full: 1);
+              LayoutMode: CenterMiddle;
+              Background: #101c2a;
+              Label {
+                Text: "EQUIPPED SKILLS";
+                Background: #c19a5b(0);
+                Style: (FontSize: 14, TextColor: #000000, RenderBold: true);
+              }
+            }
+          }
+          Group #EquippedGrid {
+            LayoutMode: CenterMiddle;
+            FlexWeight: 1;
+            Group {
+              Anchor: (Width: 200, Height: 260);
+              LayoutMode: Top;
+              Group {
+                Anchor: (Height: 80, Bottom: 10);
+                LayoutMode: Left;
+                Group {
+                  LayoutMode: Center;
+                  FlexWeight: 1;
+                  Group {
+                    Anchor: (Width: 75, Height: 75);
+                    Padding: (Full: 3);
+                    Background: #658db4;
+                    Group {
+                      Anchor: (Full: 1);
+                      Background: #080c12;
+                    }
+                  }
+                }
+                Group {
+                  LayoutMode: Center;
+                  FlexWeight: 1;
+                  Group {
+                    Anchor: (Width: 75, Height: 75);
+                    Padding: (Full: 3);
+                    Background: #658db4;
+                    Group {
+                      Anchor: (Full: 1);
+                      Background: #080c12;
+                    }
+                  }
+                }
+              }
+              Group {
+                Anchor: (Height: 80, Bottom: 10);
+                LayoutMode: Left;
+                Group {
+                  LayoutMode: Center;
+                  FlexWeight: 1;
+                  Group {
+                    Anchor: (Width: 75, Height: 75);
+                    Padding: (Full: 3);
+                    Background: #658db4;
+                    Group {
+                      Anchor: (Full: 1);
+                      Background: #080c12;
+                    }
+                  }
+                }
+                Group {
+                  LayoutMode: Center;
+                  FlexWeight: 1;
+                  Group {
+                    Anchor: (Width: 75, Height: 75);
+                    Padding: (Full: 3);
+                    Background: #658db4;
+                    Group {
+                      Anchor: (Full: 1);
+                      Background: #080c12;
+                    }
+                  }
+                }
+              }
+              Group {
+                Anchor: (Height: 80);
+                LayoutMode: Left;
+                Group {
+                  LayoutMode: Center;
+                  FlexWeight: 1;
+                  Group {
+                    Anchor: (Width: 75, Height: 75);
+                    Padding: (Full: 3);
+                    Background: #658db4;
+                    Group {
+                      Anchor: (Full: 1);
+                      Background: #080c12;
+                    }
+                  }
+                }
+                Group {
+                  LayoutMode: Center;
+                  FlexWeight: 1;
+                  Group {
+                    Anchor: (Width: 75, Height: 75);
+                    Padding: (Full: 3);
+                    Background: #658db4;
+                    Group {
+                      Anchor: (Full: 1);
+                      Background: #080c12;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    Group #TreePanelBorder {
+      Padding: (Full: 10);
+      LayoutMode: Top;
+      FlexWeight: 2.5;
+      Background: #513e22;
+      Group #TreePanelInner {
+        LayoutMode: Top;
+        FlexWeight: 1;
+        Background: #1a2a3a;
+        Group #TitleBanner {
+          Anchor: (Height: 60, Top: -10);
+          Padding: (Full: 4);
+          LayoutMode: CenterMiddle;
+          Background: #2a4c6a;
+          Group {
+            Anchor: (Full: 1);
+            LayoutMode: CenterMiddle;
+            Background: #4578a1;
+            Label {
+              Text: "TRADER";
+              Background: #2a4c6a;
+              Style: (FontSize: 36, TextColor: #ffffff, RenderBold: true);
+            }
+          }
+        }
+        Group #TreeCanvas {
+          LayoutMode: CenterMiddle;
+          FlexWeight: 1;
+          Group #TreeStructure {
+            Anchor: (Width: 700, Height: 330);
+            LayoutMode: Top;
+            Group {
+              Anchor: (Height: 80);
+              LayoutMode: Center;
+              Group {
+                Anchor: (Width: 80, Height: 80);
+                Padding: (Full: 4);
+                Background: #888888;
+                Group {
+                  Anchor: (Full: 1);
+                  Background: #080c12;
+                }
+              }
+            }
+            Group {
+              Anchor: (Height: 30);
+              LayoutMode: Center;
+              Group {
+                Anchor: (Full: 1);
+                LayoutMode: Left;
+                Group {
+                  LayoutMode: Center;
+                  FlexWeight: 1;
+                  Group {
+                    Anchor: (Full: 1);
+                    Background: #a8bacc;
+                  }
+                }
+                Group {
+                  LayoutMode: Center;
+                  FlexWeight: 1;
+                  Group {
+                    Anchor: (Full: 1);
+                    Background: #a8bacc;
+                  }
+                }
+              }
+            }
+            Group {
+              Anchor: (Height: 80);
+              LayoutMode: Left;
+              Group {
+                LayoutMode: Center;
+                FlexWeight: 1;
+                Group {
+                  Anchor: (Width: 80, Height: 80);
+                  Padding: (Full: 4);
+                  Background: #528fc4;
+                  Group {
+                    Anchor: (Full: 1);
+                    Background: #080c12;
+                  }
+                  Group {
+                    Anchor: (Width: 25, Height: 25, Bottom: -10, Right: -10);
+                    LayoutMode: CenterMiddle;
+                    Background: #3a4b5c;
+                    Label {
+                      Text: "2";
+                      Style: (FontSize: 14, TextColor: #FFFFFF);
+                    }
+                  }
+                }
+              }
+              Group {
+                LayoutMode: Center;
+                FlexWeight: 1;
+                Group {
+                  Anchor: (Width: 80, Height: 80);
+                  Padding: (Full: 4);
+                  Background: #528fc4;
+                  Group {
+                    Anchor: (Full: 1);
+                    Background: #080c12;
+                  }
+                }
+              }
+              Group {
+                LayoutMode: Center;
+                FlexWeight: 1;
+                Group {
+                  Anchor: (Width: 80, Height: 80);
+                  Padding: (Full: 4);
+                  Background: #888888;
+                  Group {
+                    Anchor: (Full: 1);
+                    Background: #080c12;
+                  }
+                }
+              }
+            }
+            Group {
+              Anchor: (Height: 50);
+              LayoutMode: Left;
+              Group {
+                LayoutMode: Center;
+                FlexWeight: 1;
+                Group {
+                  Anchor: (Full: 1);
+                  Background: #528fc4;
+                }
+              }
+              Group {
+                LayoutMode: Center;
+                FlexWeight: 1;
+                Group {
+                  Anchor: (Full: 1);
+                  LayoutMode: Left;
+                  Group {
+                    LayoutMode: Center;
+                    FlexWeight: 1;
+                    Group {
+                      Anchor: (Full: 1);
+                      Background: #528fc4;
+                    }
+                  }
+                  Group {
+                    LayoutMode: Center;
+                    FlexWeight: 1;
+                    Group {
+                      Anchor: (Full: 1);
+                      Background: #a8bacc;
+                    }
+                  }
+                }
+              }
+              Group {
+                LayoutMode: Center;
+                FlexWeight: 1;
+                Group {
+                  Anchor: (Full: 1);
+                  Background: #528fc4;
+                }
+              }
+            }
+            Group {
+              Anchor: (Height: 80);
+              LayoutMode: Left;
+              Group {
+                LayoutMode: Center;
+                FlexWeight: 1;
+                Group {
+                  Anchor: (Width: 80, Height: 80);
+                  Padding: (Full: 4);
+                  Background: #528fc4;
+                  Group {
+                    Anchor: (Full: 1);
+                    Background: #080c12;
+                  }
+                  Group {
+                    Anchor: (Width: 25, Height: 25, Bottom: -10, Right: -10);
+                    LayoutMode: CenterMiddle;
+                    Background: #3a4b5c;
+                    Label {
+                      Text: "4";
+                      Style: (FontSize: 14, TextColor: #FFFFFF);
+                    }
+                  }
+                }
+              }
+              Group {
+                Anchor: (Right: 20);
+                LayoutMode: Right;
+                FlexWeight: 0.5;
+                Group {
+                  Anchor: (Width: 80, Height: 80);
+                  Padding: (Full: 4);
+                  Background: #528fc4;
+                  Group {
+                    Anchor: (Full: 1);
+                    Background: #080c12;
+                  }
+                  Group {
+                    Anchor: (Width: 25, Height: 25, Bottom: -10, Right: -10);
+                    LayoutMode: CenterMiddle;
+                    Background: #3a4b5c;
+                    Label {
+                      Text: "5";
+                      Style: (FontSize: 14, TextColor: #FFFFFF);
+                    }
+                  }
+                }
+              }
+              Group {
+                Anchor: (Left: 20);
+                LayoutMode: Left;
+                FlexWeight: 0.5;
+                Group {
+                  Anchor: (Width: 80, Height: 80);
+                  Padding: (Full: 4);
+                  Background: #528fc4;
+                  Group {
+                    Anchor: (Full: 1);
+                    Background: #080c12;
+                  }
+                  Group {
+                    Anchor: (Width: 25, Height: 25, Bottom: -10, Right: -10);
+                    LayoutMode: CenterMiddle;
+                    Background: #3a4b5c;
+                    Label {
+                      Text: "2";
+                      Style: (FontSize: 14, TextColor: #FFFFFF);
+                    }
+                  }
+                }
+              }
+              Group {
+                LayoutMode: Center;
+                FlexWeight: 1;
+                Group {
+                  Anchor: (Width: 80, Height: 80);
+                  Padding: (Full: 4);
+                  Background: #528fc4;
+                  Group {
+                    Anchor: (Full: 1);
+                    Background: #080c12;
+                  }
+                }
+              }
+            }
+          }
+        }
+        Group #BottomBarBorder {
+          Anchor: (Height: 120);
+          Padding: (Full: 4);
+          LayoutMode: Top;
+          Background: #c19a5b;
+          Group #BottomBarInner {
+            Padding: (Full: 20);
+            LayoutMode: Left;
+            FlexWeight: 1;
+            Background: #101c2a;
+            Group {
+              LayoutMode: CenterMiddle;
+              FlexWeight: 1;
+              Label {
+                Text: "TALENT POINTS LEFT: 15";
+                Style: (FontSize: 20, TextColor: #FFFFFF, RenderBold: true, HorizontalAlignment: Center);
+              }
+            }
+            Group {
+              LayoutMode: Top;
+              FlexWeight: 1;
+              Button {
+                Anchor: (Width: 180, Height: 35, Bottom: 10);
+                Background: #000000;
+                Group {
+                  Anchor: (Full: 1);
+                  LayoutMode: CenterMiddle;
+                  Background: #378a00(0.3);
+                  Label {
+                    Text: "+ ADD POINTS";
+                    Style: (TextColor: #ffffff, RenderBold: true);
+                  }
+                }
+              }
+              Button {
+                Anchor: (Width: 180, Height: 35);
+                Background: #c19a5b;
+                Group {
+                  Anchor: (Full: 1);
+                  LayoutMode: CenterMiddle;
+                  Background: #750000;
+                  Label {
+                    Text: "- TAKE POINTS";
+                    Style: (TextColor: #ffffff, RenderBold: true);
+                  }
+                }
+              }
+            }
+            Group {
+              LayoutMode: CenterMiddle;
+              FlexWeight: 1;
+              Button {
+                Anchor: (Width: 160, Height: 45);
+                Background: #c19a5b;
+                Group {
+                  Anchor: (Full: 1);
+                  LayoutMode: CenterMiddle;
+                  Background: #000000;
+                  Label {
+                    Text: "DONE";
+                    Style: (FontSize: 20, TextColor: #FFFFFF, RenderBold: true);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

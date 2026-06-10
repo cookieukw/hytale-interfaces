@@ -1,0 +1,273 @@
+Group #GuildManagerScreen {
+  LayoutMode: CenterMiddle;
+  Group #Window {
+    Anchor: (Width: 900, Height: 650);
+    LayoutMode: Top;
+    Background: #141414;
+    Group #Header {
+      Anchor: (Height: 60);
+      Padding: (Left: 20, Right: 20);
+      LayoutMode: Left;
+      Background: #0D0D0D;
+      Label #Logo {
+        Text: "🛡";
+        Anchor: (Width: 40);
+        Style: (FontSize: 24, TextColor: #FFB000, VerticalAlignment: Center);
+      }
+      Label #Title {
+        Text: "Guild System";
+        FlexWeight: 1;
+        Style: (FontSize: 20, TextColor: #FFFFFF, RenderBold: true, VerticalAlignment: Center);
+      }
+    }
+    Group #Body {
+      LayoutMode: Left;
+      FlexWeight: 1;
+      Group #Sidebar {
+        Anchor: (Width: 200);
+        Padding: (Top: 20, Bottom: 20, Left: 10, Right: 10);
+        LayoutMode: Top;
+        Background: #1A1A1A;
+        Button #BtnDashboard {
+          Anchor: (Height: 40, Bottom: 5);
+          Background: #2A2A2A;
+          Label {
+            Text: "Dashboard";
+            Style: (TextColor: #FFB000, HorizontalAlignment: Center);
+          }
+        }
+        Button #BtnGuilds {
+          Anchor: (Height: 40, Bottom: 5);
+          Background: #1F1F1F;
+          Label {
+            Text: "Guilds";
+            Style: (TextColor: #DDDDDD, HorizontalAlignment: Center, VerticalAlignment: Center);
+          }
+        }
+        Button #BtnMembers {
+          Anchor: (Height: 40, Bottom: 5);
+          Background: #1F1F1F;
+          Label {
+            Text: "Members";
+            Style: (TextColor: #DDDDDD, HorizontalAlignment: Center, VerticalAlignment: Center);
+          }
+        }
+        Button #BtnEvents {
+          Anchor: (Height: 40, Bottom: 5);
+          Background: #1F1F1F;
+          Label {
+            Text: "Events";
+            Style: (TextColor: #DDDDDD, HorizontalAlignment: Center, VerticalAlignment: Center);
+          }
+        }
+        Button #BtnCalendar {
+          Anchor: (Height: 40, Bottom: 5);
+          Background: #1F1F1F;
+          Label {
+            Text: "Calendar";
+            Style: (TextColor: #DDDDDD, HorizontalAlignment: Center, VerticalAlignment: Center);
+          }
+        }
+        Button #BtnReports {
+          Anchor: (Height: 40, Bottom: 5);
+          Background: #1F1F1F;
+          Label {
+            Text: "Reports";
+            Style: (TextColor: #DDDDDD, HorizontalAlignment: Center, VerticalAlignment: Center);
+          }
+        }
+        Button #BtnConfig {
+          Anchor: (Height: 40);
+          Background: #1F1F1F;
+          Label {
+            Text: "Settings";
+            Style: (TextColor: #DDDDDD, HorizontalAlignment: Center, VerticalAlignment: Center);
+          }
+        }
+      }
+      Group #MainContent {
+        Padding: (Full: 20);
+        LayoutMode: Top;
+        FlexWeight: 1;
+        Background: #111111;
+        Label #SectionTitle {
+          Text: "General Stats";
+          Anchor: (Bottom: 15);
+          Style: (FontSize: 22, TextColor: #FFFFFF, RenderBold: true);
+        }
+        Group #StatsRow {
+          Anchor: (Height: 80, Bottom: 25);
+          LayoutMode: Left;
+          Group #StatGuilds {
+            Anchor: (Right: 15);
+            LayoutMode: MiddleCenter;
+            FlexWeight: 1;
+            Background: #1A1A1A;
+            Label #StatGuildsTitle {
+              Text: "Total Guilds";
+              Style: (FontSize: 14, TextColor: #AAAAAA, HorizontalAlignment: Center);
+            }
+            Label #StatGuildsValue {
+              Text: "142";
+              Style: (FontSize: 24, TextColor: #FFB000, RenderBold: true, HorizontalAlignment: Center);
+            }
+          }
+          Group #StatMembers {
+            Anchor: (Right: 15);
+            LayoutMode: MiddleCenter;
+            FlexWeight: 1;
+            Background: #1A1A1A;
+            Label #StatMembersTitle {
+              Text: "Total Members";
+              Style: (FontSize: 14, TextColor: #AAAAAA, HorizontalAlignment: Center);
+            }
+            Label #StatMembersValue {
+              Text: "3,845";
+              Style: (FontSize: 24, TextColor: #44AAFF, RenderBold: true, HorizontalAlignment: Center);
+            }
+          }
+          Group #StatEvents {
+            LayoutMode: MiddleCenter;
+            FlexWeight: 1;
+            Background: #1A1A1A;
+            Label #StatEventsTitle {
+              Text: "Active Events";
+              Style: (FontSize: 14, TextColor: #AAAAAA, HorizontalAlignment: Center);
+            }
+            Label #StatEventsValue {
+              Text: "7";
+              Style: (FontSize: 24, TextColor: #55FF55, RenderBold: true, HorizontalAlignment: Center);
+            }
+          }
+        }
+        Label #EventsTitle {
+          Text: "Upcoming Events";
+          Anchor: (Bottom: 10);
+          Style: (FontSize: 18, TextColor: #FFFFFF, RenderBold: true);
+        }
+        Group #EventsList {
+          Anchor: (Height: 90, Bottom: 25);
+          Padding: (Full: 15);
+          LayoutMode: Top;
+          Background: #1A1A1A;
+          Group #Event1 {
+            Anchor: (Height: 30, Bottom: 5);
+            LayoutMode: Left;
+            Label #E1Name {
+              Text: "⚔ Territorial War";
+              FlexWeight: 1;
+              Style: (FontSize: 14, TextColor: #FFAA00, VerticalAlignment: Center);
+            }
+            Label #E1Date {
+              Text: "15/06 - 20:00";
+              Anchor: (Width: 150);
+              Style: (FontSize: 14, TextColor: #AAAAAA, HorizontalAlignment: End, VerticalAlignment: Center);
+            }
+          }
+          Group #Event2 {
+            Anchor: (Height: 30);
+            LayoutMode: Left;
+            Label #E2Name {
+              Text: "🐉 Dragon Raid";
+              FlexWeight: 1;
+              Style: (FontSize: 14, TextColor: #FF5555, VerticalAlignment: Center);
+            }
+            Label #E2Date {
+              Text: "17/06 - 21:00";
+              Anchor: (Width: 150);
+              Style: (FontSize: 14, TextColor: #AAAAAA, HorizontalAlignment: End, VerticalAlignment: Center);
+            }
+          }
+        }
+        Label #GuildsTitle {
+          Text: "Featured Guilds";
+          Anchor: (Bottom: 10);
+          Style: (FontSize: 18, TextColor: #FFFFFF, RenderBold: true);
+        }
+        Group #GuildsTable {
+          LayoutMode: Top;
+          FlexWeight: 1;
+          Background: #1A1A1A;
+          Group #TableHeader {
+            Anchor: (Height: 35);
+            Padding: (Left: 15, Right: 15);
+            LayoutMode: Left;
+            Background: #222222;
+            Label #ThName {
+              Text: "Name";
+              FlexWeight: 4;
+              Style: (FontSize: 14, TextColor: #AAAAAA, VerticalAlignment: Center);
+            }
+            Label #ThLeader {
+              Text: "Leader";
+              FlexWeight: 3;
+              Style: (FontSize: 14, TextColor: #AAAAAA, VerticalAlignment: Center);
+            }
+            Label #ThMembers {
+              Text: "Members";
+              FlexWeight: 2;
+              Style: (FontSize: 14, TextColor: #AAAAAA, VerticalAlignment: Center);
+            }
+            Label #ThStatus {
+              Text: "Status";
+              FlexWeight: 2;
+              Style: (FontSize: 14, TextColor: #AAAAAA, VerticalAlignment: Center);
+            }
+          }
+          Group #TableRow1 {
+            Anchor: (Height: 45);
+            Padding: (Left: 15, Right: 15);
+            LayoutMode: Left;
+            Background: #1D1D1D;
+            Label #Td1Name {
+              Text: "🛡 Valhalla";
+              FlexWeight: 4;
+              Style: (FontSize: 14, TextColor: #FFFFFF, VerticalAlignment: Center);
+            }
+            Label #Td1Leader {
+              Text: "Ragnar";
+              FlexWeight: 3;
+              Style: (FontSize: 14, TextColor: #DDDDDD, VerticalAlignment: Center);
+            }
+            Label #Td1Members {
+              Text: "45";
+              FlexWeight: 2;
+              Style: (FontSize: 14, TextColor: #DDDDDD, VerticalAlignment: Center);
+            }
+            Label #Td1Status {
+              Text: "Active";
+              FlexWeight: 2;
+              Style: (FontSize: 14, TextColor: #55FF55, VerticalAlignment: Center);
+            }
+          }
+          Group #TableRow2 {
+            Anchor: (Height: 45);
+            Padding: (Left: 15, Right: 15);
+            LayoutMode: Left;
+            Background: #1A1A1A;
+            Label #Td2Name {
+              Text: "🌙 Eclipse";
+              FlexWeight: 4;
+              Style: (FontSize: 14, TextColor: #FFFFFF, VerticalAlignment: Center);
+            }
+            Label #Td2Leader {
+              Text: "Luna";
+              FlexWeight: 3;
+              Style: (FontSize: 14, TextColor: #DDDDDD, VerticalAlignment: Center);
+            }
+            Label #Td2Members {
+              Text: "32";
+              FlexWeight: 2;
+              Style: (FontSize: 14, TextColor: #DDDDDD, VerticalAlignment: Center);
+            }
+            Label #Td2Status {
+              Text: "Active";
+              FlexWeight: 2;
+              Style: (FontSize: 14, TextColor: #55FF55, VerticalAlignment: Center);
+            }
+          }
+        }
+      }
+    }
+  }
+}

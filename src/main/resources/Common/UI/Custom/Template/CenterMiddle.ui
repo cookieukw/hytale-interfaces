@@ -1,0 +1,82 @@
+Group #CenterModalOverlay {
+  Anchor: (Full: 0);
+  LayoutMode: CenterMiddle;
+  Background: #000000AA; 
+
+  Group #ModalWindow {
+    Anchor: (Width: 480, Height: 300);
+    Background: #1a1a1c; 
+    LayoutMode: Top;
+    
+
+    Group #AccentLine {
+      Anchor: (Height: 5);
+      Background: #FFB000; 
+    }
+
+    
+    Group #Header {
+      Anchor: (Height: 80);
+      LayoutMode: CenterMiddle;
+      
+      Label #Title {
+        Style: (
+          FontSize: 28, 
+          TextColor: #FFB000, 
+          HorizontalAlignment: Center
+        );
+        Text: "✨ Recompensa Diária ✨";
+      }
+    }
+
+
+    Group #Body {
+      FlexWeight: 1;
+      LayoutMode: MiddleCenter;
+      Padding: (Horizontal: 40);
+
+      Label #DescriptionLine1 {
+        Style: (
+          FontSize: 18, 
+          TextColor: #DDDDDD, 
+          HorizontalAlignment: Center
+        );
+        Text: "Você recebeu um baú misterioso por acessar o servidor hoje!";
+        Padding: (Bottom: 5);
+      }
+
+      Label #DescriptionLine2 {
+        Style: (
+          FontSize: 18, 
+          TextColor: #DDDDDD, 
+          HorizontalAlignment: Center
+        );
+        Text: "Abra agora para descobrir seu prêmio épico.";
+      }
+    }
+
+
+    Group #Footer {
+      Anchor: (Height: 80);
+      LayoutMode: CenterMiddle;
+
+      Button #ClaimButton {
+        Anchor: (Width: 150, Height: 45, Right: 20);
+        Background: #FFB000;
+        Label { 
+          Style: (TextColor: #1a1a1c, FontSize: 18, RenderBold: true, HorizontalAlignment: Center);
+          Text: "Resgatar"; 
+        }
+      }
+
+      Button #CloseButton {
+        Anchor: (Width: 150, Height: 45);
+        Background: #333333;
+        Label { 
+          Style: (TextColor: #DDDDDD, FontSize: 16, HorizontalAlignment: Center);
+          Text: "Mais Tarde"; 
+        }
+      }
+    }
+  }
+}
