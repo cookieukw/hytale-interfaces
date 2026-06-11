@@ -9,6 +9,7 @@ import org.example.plugin.commands.GuildCommand;
 import org.example.plugin.commands.SkillTreeCommand;
 import org.example.plugin.commands.BasicLayoutCommand;
 import org.example.plugin.commands.NpcInteractionCommand;
+import org.example.plugin.commands.CaskaraAdminCommand;
 
 import javax.annotation.Nonnull;
 
@@ -30,6 +31,7 @@ public class ExamplePlugin extends JavaPlugin {
                 this.getCommandRegistry().registerCommand(new SkillTreeCommand());
                 this.getCommandRegistry().registerCommand(new BasicLayoutCommand());
                 this.getCommandRegistry().registerCommand(new NpcInteractionCommand());
+                this.getCommandRegistry().registerCommand(new CaskaraAdminCommand());
                 LOGGER.atInfo().log("Template inicializado!");
         }
 }

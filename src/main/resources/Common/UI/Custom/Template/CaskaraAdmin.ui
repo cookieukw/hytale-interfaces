@@ -12,10 +12,16 @@ Group #CaskaraAdminOverlay {
       Group #HeaderLeft {
         LayoutMode: Left;
         FlexWeight: 1;
-        Label #Logo {
-          Text: "🗄";
-          Anchor: (Right: 15);
-          Style: (FontSize: 26, TextColor: #FFB000, VerticalAlignment: Center);
+        AssetImage #Logo {
+          AssetPath: "Common/Icons/StructuralCrafting/Door.png";
+          Anchor: (Width: 32, Height: 32, Right: 15);
+          HitTestVisible: true;
+          TooltipText: "Caskara Database Logo";
+          TextTooltipShowDelay: 0.5;
+          OutlineColor: #FFFFFF;
+          OutlineSize: 1.0;
+          Padding: (Full: 2);
+          Background: #222222;
         }
         Label #Title {
           Text: "Caskara DB Admin";
