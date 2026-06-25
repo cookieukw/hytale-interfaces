@@ -13,7 +13,7 @@ Group #CaskaraAdminOverlay {
         LayoutMode: Left;
         FlexWeight: 1;
         AssetImage #Logo {
-          AssetPath: "Common/Icons/StructuralCrafting/Door.png";
+          AssetPath: "UI/Crosshairs/Default.png";
           Anchor: (Width: 32, Height: 32, Right: 15);
           HitTestVisible: true;
           TooltipText: "Caskara Database Logo";
@@ -202,7 +202,7 @@ Group #CaskaraAdminOverlay {
         Group #Toolbar {
           Anchor: (Height: 35, Bottom: 15);
           LayoutMode: Left;
-          TextInput #SearchInput {
+          TextField #SearchInput {
             Anchor: (Width: 300, Right: 15);
             Background: #181818;
           }

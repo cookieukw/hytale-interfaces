@@ -11,10 +11,10 @@ import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import javax.annotation.Nonnull;
 
-public class CaskaraAdminCommand extends AbstractPlayerCommand {
+public class ShowcaseCommand extends AbstractPlayerCommand {
 
-    public CaskaraAdminCommand() {
-        super("caskaraadmin", "cadmin");
+    public ShowcaseCommand() {
+        super("showcase", "Showcase UI");
     }
 
     @Override
@@ -26,7 +26,7 @@ public class CaskaraAdminCommand extends AbstractPlayerCommand {
         @Nonnull World world
     ) {
         Player player = (Player) store.getComponent(ref, Player.getComponentType());
-        DynamicUIPage page = new DynamicUIPage(playerRef, "Template/CaskaraAdmin.ui");
+        DynamicUIPage page = new DynamicUIPage(playerRef, "Template/Showcase.ui");
         player.getPageManager().openCustomPage(ref, store, page);
     }
 }

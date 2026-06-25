@@ -1,0 +1,92 @@
+Group {
+  Anchor: (Full: 0);
+
+  SceneBlur {
+    Anchor: (Full: 0);
+    Background: #000000(0.4);
+  }
+
+  Group #MainWindow {
+    LayoutMode: Left;
+    Anchor: (Width: 1000, Height: 600);
+    Background: #151515(0.9);
+    OutlineColor: #444444;
+    OutlineSize: 1.0;
+    Padding: 20;
+
+    // Left Panel - Character Preview & Progress
+    Group #LeftPanel {
+      FlexWeight: 1;
+      LayoutMode: Top;
+      Anchor: (Right: 10);
+      
+      Label { 
+        Text: "Character Preview"; 
+        Style: (TextColor: #FFFFFF, FontSize: 24, RenderBold: true);
+        Anchor: (Bottom: 15);
+      }
+      
+      CharacterPreviewComponent {
+        FlexWeight: 1;
+        Background: #222222;
+        OutlineColor: #555555;
+        OutlineSize: 1.0;
+        Anchor: (Bottom: 20);
+      }
+
+      Label { 
+        Text: "Loading Status"; 
+        Style: (TextColor: #AAAAAA, FontSize: 18);
+        Anchor: (Bottom: 10);
+      }
+      
+      CircularProgressBar {
+        Anchor: (Width: 80, Height: 80);
+        Value: 0.75;
+        Color: #00FF99;
+      }
+    }
+
+    // Middle Panel - Code Editor
+    Group #MiddlePanel {
+      FlexWeight: 2;
+      LayoutMode: Top;
+      Anchor: (Right: 10);
+      
+      Label { 
+        Text: "Database Query Editor"; 
+        Style: (TextColor: #FFFFFF, FontSize: 24, RenderBold: true);
+        Anchor: (Bottom: 15);
+      }
+
+      CodeEditor {
+        FlexWeight: 1;
+        Background: #1E1E1E;
+        Value: "{ \"query\": \"SELECT * FROM users\", \"limit\": 100 }";
+        Language: Json;
+        LineNumberWidth: 30;
+        LineNumberBackground: #2D2D30;
+        LineNumberTextColor: #858585;
+        Padding: 10;
+      }
+    }
+
+    // Right Panel - Color Picker
+    Group #RightPanel {
+      FlexWeight: 1;
+      LayoutMode: Top;
+      
+      Label { 
+        Text: "Tag Color"; 
+        Style: (TextColor: #FFFFFF, FontSize: 24, RenderBold: true);
+        Anchor: (Bottom: 15);
+      }
+
+      ColorPicker {
+        Anchor: (Width: 200, Height: 250);
+        Value: #FF0055;
+        DisplayTextField: true;
+      }
+    }
+  }
+}
